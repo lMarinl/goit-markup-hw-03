@@ -63,7 +63,6 @@ margin: auto;
 .main{
     display: flex;
     border-bottom: 1px solid var(--cornflower);
-    padding: 24px 0;
 }
 
 .main-container{
@@ -77,7 +76,9 @@ margin: auto;
     flex-grow: 1;
     justify-content: center;
 }
-
+.main-list{
+    padding: 24px 0;
+}
 .main-link-logo {
     color: var(--iris);
         font-family: Raleway, sans-serif;
@@ -219,8 +220,10 @@ background-color: var(--ocean);
 }
 .doing-list{
     display: flex;
-width: calc((100% - 48px) / 3);
 gap: 24px;
+}
+.doing-item{
+width: calc((100% - 48px) / 3);
 }
 .doing-title {
     color: var(--navy-blue);
@@ -243,10 +246,12 @@ gap: 24px;
 .team-list{
 display: flex;
 max-width: 264px;
-width: calc((100% - 72px) / 4);
 gap: 24px;
 }
 
+.team-item{
+width: calc((100% - 72px) / 4);
+}
 
 .team-title {
 color: var(--navy-blue);
@@ -328,7 +333,6 @@ text-align: center;
 .portfolio{
     display: flex;
     border-bottom: 1px solid var(--cornflower);
-    padding: 24px 0;
 }
 
 .portfolio-container{
@@ -342,6 +346,9 @@ text-align: center;
     justify-content: center;
 }
 
+.portfolio-list{
+    padding: 24px 0;
+}
 .portfolio-link-logo {
     color: var(--iris);
         font-family: Raleway, sans-serif;
