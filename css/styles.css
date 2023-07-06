@@ -63,6 +63,7 @@ margin: auto;
 .main{
     display: flex;
     border-bottom: 1px solid var(--cornflower);
+    padding: 24px 0;
 }
 
 .main-container{
@@ -96,7 +97,6 @@ margin: auto;
 .main-list{
     display: flex;
     gap: 40px;
-    padding: 24px 0;
 }
 
 .main-link {
@@ -168,8 +168,9 @@ margin: auto;
         letter-spacing: 0.04em;
         cursor: pointer;
         font-family: inherit;
-        display: flex;
+        display: block;
         margin: 0 auto;
+        min-width: 169px;
         padding: 16px 32px;
         border: none;
         border-radius: 4px;
@@ -218,7 +219,7 @@ background-color: var(--ocean);
 }
 .doing-list{
     display: flex;
-width: calc((100%-48px)/3);
+width: calc((100% - 48px) / 3);
 gap: 24px;
 }
 .doing-title {
@@ -242,9 +243,10 @@ gap: 24px;
 .team-list{
 display: flex;
 max-width: 264px;
-width: calc((100%-72)/3);
+width: calc((100% - 72px) / 4);
 gap: 24px;
 }
+
 
 .team-title {
 color: var(--navy-blue);
@@ -260,8 +262,11 @@ text-align: center;
 
 .team-item{
     background-color: #FFFFFF;
-    padding-bottom: 32px;
-    
+    border-radius: 0px 0px 4px 4px;
+}
+
+.container-team{
+    padding: 32px 16px;
 }
 
 .team-list-title{
@@ -271,8 +276,8 @@ text-align: center;
     font-weight: 500;
     line-height: 24px;
     letter-spacing: 0.4px;
-    margin-top: 32px;
     margin-bottom: 8px;
+    text-align:center;
 }
 
 .team-text{
@@ -281,6 +286,7 @@ text-align: center;
         font-weight: 400;
         line-height: 1.5;
         letter-spacing: 0.02em;
+        text-align: center;
 }
 
 /*-----footer-----*/
@@ -298,6 +304,8 @@ text-align: center;
         line-height: 1.17;
         letter-spacing: 0.03em;
         text-transform: uppercase;
+        display: inline-block;
+        margin-bottom: 16px;
 }
 
 .footer-logo-accent{
@@ -311,7 +319,6 @@ text-align: center;
         line-height: 1.5;
         letter-spacing: 0.02em;
         max-width: 264px;
-        margin-top: 15px;
     }
 
 /*----------------------------------Portfolio-----------------------------------*/
@@ -321,6 +328,7 @@ text-align: center;
 .portfolio{
     display: flex;
     border-bottom: 1px solid var(--cornflower);
+    padding: 24px 0;
 }
 
 .portfolio-container{
@@ -353,7 +361,6 @@ text-align: center;
 .portfolio-list{
     display: flex;
     gap: 40px;
-    padding: 24px 0;
 }
 
 .portfolio-link {
@@ -422,7 +429,7 @@ text-align: center;
         letter-spacing: 0.04em;
         cursor: pointer;
         display: flex;
-        border: none;
+        border: 1px solid var(--cornflower);
         border-radius: 4px;
         padding: 12px 24px;
 }
@@ -430,20 +437,21 @@ text-align: center;
 .menu-btn:focus{
     background-color: var(--ocean);
     color: var(--white);
+    border: 1px solid transparent;
 }
 
 .gallery-list{
     display: flex;
     flex-wrap: wrap;
-    width: calc((100%-48)/3);
     gap: 24px;
+    row-gap: 48px;
 }
-.gallery-item:not(:last-child){
-margin-bottom: 48px;
+.gallery-item{
+    width: calc((100% - 48px) / 3);
 }
 
 .text-container{
-    padding: 0 16px;
+    padding: 32px 16px;
     border-right: 1px solid var(--cornflower);
     border-bottom:1px solid var(--cornflower);
     border-left: 1px solid var(--cornflower);
@@ -452,10 +460,10 @@ margin-bottom: 48px;
 .gallery-title {
     color: var(--navy-blue);
     font-size: 20px;
-        font-weight: 500;
-        line-height: 1.2;
-        letter-spacing: 0.02em;
-        padding: 32px 0 8px;
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    margin-bottom: 8px;
 }
 
 .gallery-text {
@@ -464,7 +472,6 @@ margin-bottom: 48px;
         font-weight: 400;
         line-height: 1.5;
         letter-spacing: 0.02em;
-        padding-bottom: 32px;
 }
 
 /*--------------------------------Footer-------------------------*/
@@ -482,6 +489,7 @@ margin-bottom: 48px;
         line-height: 1.17;
         letter-spacing: 0.03em;
         text-transform: uppercase;
+        display: inline-block;
 }
 
 .pf-logo-accent {
@@ -495,6 +503,4 @@ margin-bottom: 48px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     max-width: 264px;
-    margin-top: 15px;
 }
-
